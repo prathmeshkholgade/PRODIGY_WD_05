@@ -8,10 +8,6 @@ const tepmax = document.querySelector(".max-tep");
 const feelsLike = document.querySelector(".feels-like");
 const weather = document.querySelector(".weather-info");
 
-const apiKey = "8399cfa4163a9b47264821d0ec83611d";
-
-
-
 async function getData(cityName) {
   let url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=metric`;
   let WeatherData = await fetch(url);
